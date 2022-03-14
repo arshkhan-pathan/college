@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BDAY Date finder</title>
+	<script type="text/javascript">
+		
+			function daysdiff(date1,date2) {
+				one_day=24*60*60*1000;
+				date1_ms=date1.getTime();
+				date2_ms=date2.getTime();
+				diff_ms=Math.round(Math.abs(date1_ms-date2_ms));
+				return(diff_ms/one_day);
+			}
+			
+
+
+
+
+
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+			d1=new Date();
+			d1.setDate(30);
+			d1.setMonth(3);
+
+			d2=new Date();
+			document.write("Today's Date   "+d1+"  <br>")
+			document.write("Date diff  "+daysdiff(d1,d2))
+
+
+
+
+	</script>
+
+</body>
+</html>

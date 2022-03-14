@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>D3JS</title>
+	<script type="text/javascript" src="d3.v6.min.js"></script>
+</head>
+</head>
+<body>
+	<div>hello world</div>
+	<div id="second" style="width: 100px;height: 100px;background-color: blue;border: 2px solid black;"></div>
+
+	<button onclick="myfun()">Click to change</button>
+
+</body>
+
+
+
+
+<script type="text/javascript">
+	
+
+		var myfun=()=>{
+			d3.select("div").text("welcome");
+		}
+		d3.select("#second").on('mouseover',function(){d3.select(this).style('background','red')})
+							.on('mouseout',function(){d3.select(this).style('background','blue')})
+
+</script>
+</html>

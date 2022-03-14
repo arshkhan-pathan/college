@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>USING DATA TABLES</title>
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="http://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+	<link href="http://cdn.datatables.net/1.10.21/css/jquery.dataTables.css" type="text/css" rel="stylesheet"/>	
+	
+	<script type="text/javascript">
+		
+
+			$(function(){
+
+				$("#SalesByRegion").dataTable({
+					ordering:true,
+					paging:true`,
+					info:true,
+				});
+			});
+
+	</script>
+	
+
+
+</head>
+<body>
+		<table border="1" id="SalesByRegion" class="stripe">
+			
+			<thead>
+				<tr>
+					<th>Region</th>
+					<th>sales</th>
+					<th>Mean</th>
+
+
+
+				</tr>
+			</thead>
+			<tbody>
+				
+				<tr>
+					<td>North</td>
+					<td>5000</td>
+					<td>25</td>
+
+				</tr>
+
+
+				<tr>
+					<td>West</td>
+					<td>6000</td>
+					<td>205</td>
+
+				</tr>
+				<tr>
+					<td>South</td>
+					<td>5500</td>
+					<td>255</td>
+
+				</tr>
+				<tr>
+					<td>NorthEast</td>
+					<td>5900</td>
+					<td>259</td>
+
+				</tr>
+			</tbody>
+		</table>
+</body>
+</html>

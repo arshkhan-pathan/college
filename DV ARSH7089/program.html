@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Gtu Program</title>
+
+	<script type="text/javascript">
+		function mouseover() {
+			obj=document.getElementById('h1')
+			obj.style.color="red";
+		}
+		function red() {
+			obj=document.getElementById("body")
+			obj.style.backgroundColor="red";
+
+
+
+		}
+		function green() {
+			obj=document.getElementById("body")
+			obj.style.backgroundColor="green";
+
+
+
+		}
+		function time1() {
+			d1=new Date();
+			document.write(d1);
+		}
+		function mouseout() {
+
+			obj=document.getElementById('h1')
+			obj.style.color="black ";
+		}
+
+	</script>
+</head>
+<body id="body">
+
+
+	<h1 id="h1" onmouseover="mouseover()" onmouseout="mouseout()">HELLO WORLD</h1>
+	<input type="button" name="tbutton" id="time" value="getTime" onclick="time1()">
+	<input type="button" name="rbutton" id="red" value="red" onclick="red()">
+	<input type="button" name="gbutton" id="green" value="green" onclick="green()">
+
+
+
+</body>
+</html>

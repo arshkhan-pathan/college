@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+		function fun(obj,e) {
+
+			obj.innerHTML="kEY Pressed <br>"+e.keyCode+"  "+String.fromCharCode(e.keyCode)
+			input=String.fromCharCode(e.keyCode);
+			
+			if (input=='a' || input=="e" || input=="i" || input=="o" || input=="u"){
+				document.write("vowel pressed");
+				//bg();
+
+			}
+
+		}
+		
+
+		function bg() {
+			obj=document.getElementById("b1");
+			obj.style.backgroundColor="green";
+
+
+
+		}
+
+
+	</script>
+
+</head>
+<body onkeypress="fun(this,event)" onkeyup="bg()" id="b1">
+
+	
+
+</body>
+</html>
