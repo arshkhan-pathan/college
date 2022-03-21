@@ -1,0 +1,27 @@
+<person>
+    <student>
+        <name>Arsh</name>
+        <age>25</age>
+        <marks>90</marks>
+    
+    
+    </student>
+    
+       
+          <student>
+        <name>Amir</name>
+        <age>22</age>
+        <marks>88</marks>
+    
+    
+    </student>
+    
+       
+          <student>
+        <name>jisan</name>
+        <age>22</age>
+        <marks>99</marks>
+    
+    
+    </student>   
+</person>    
